@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -7,10 +8,11 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Link to <Link href="/posts/first-post"><a>First Post!</a></Link>
         </h1>
 
         <p className="description">
